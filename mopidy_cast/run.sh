@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
+mount -t cifs //192.168.0.200/Multimedia/ /share/ -o
+
 local_scan=$(cat /data/options.json | jq -r '.local_scan // empty')
 options=$(cat /data/options.json | jq -r 'if .options then [.options[] | "-o "+.name+"="+.value ] | join(" ") else "" end')
 config="/var/lib/mopidy/.config/mopidy/mopidy.conf:/var/lib/mopidy/.config/mopidy/mopidy_cast.conf"

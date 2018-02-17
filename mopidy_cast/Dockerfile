@@ -27,6 +27,4 @@ RUN chmod a+x /run.sh
 
 EXPOSE 6600 6680 1704 1705
 
-RUN mount -t cifs //192.168.0.200/Multimedia /share/media/ -o
-
 CMD [ "/run.sh" ]
