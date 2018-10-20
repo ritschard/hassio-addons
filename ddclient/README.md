@@ -5,26 +5,30 @@
 
 ### daemon (int)
 Default: 60
+
 Check every x seconds.
+
 
 ### syslog (str)
 Default: yes
+
 Log update msgs to syslog.
 
+
 ### login (str)
+
 Your username.
 
 ### password (str)
+
 Your password or MD5/SHA256 of password.
 
 ### server (str)
 Default: api.dynu.com
+
 IP update server.
 
 ### protocol (str)
 Default: dyndns2
-Log update msgs to syslog.
 
-### ssl (str)
-Default: yes
-Log update msgs to syslog.
+IP update protocol to use.
