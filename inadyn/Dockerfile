@@ -1,9 +1,9 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-ENV inadyn_release https://github.com/troglobit/inadyn/releases/download/v2.3.1/inadyn-2.3.1.tar.xz
+ENV inadyn_release https://github.com/troglobit/inadyn/releases/download/v2.5/inadyn-2.5.tar.xz
 ENV libite_release https://github.com/troglobit/libite/releases/download/v1.9.2/libite-1.9.2.tar.xz
-ENV libconfuse_release https://github.com/martinh/libconfuse/releases/download/v3.2.1/confuse-3.2.1.tar.xz
+ENV libconfuse_release https://github.com/martinh/libconfuse/releases/download/v3.2.2/confuse-3.2.2.tar.xz
 
 ENV LANG='C.UTF-8'\
  TERM='xterm-256color'\
