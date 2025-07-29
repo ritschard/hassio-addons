@@ -33,12 +33,12 @@ jobs:
         with:
           file-path: addon-hyperhdr/config.json
           commit-msg: Update version
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_TOKEN }}
 
       - uses: actions/create-release@v1
         if: ${{ env.VERSION != env.RELEASE }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           tag_name: ${{ env.RELEASE }}
           release_name: ${{ env.RELEASE }}
